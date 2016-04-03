@@ -1,0 +1,15 @@
+meteorapp:
+  image: meteortest
+  ports:
+    - "3000:3000"
+  volumes:
+    - /opt/nashdevs/meteorTest:/meteor
+  environment:
+    - MONGO_URL=mongodb://mongo meteor
+  links:
+    - mongo
+
+mongo:
+ image: mongo:3.2
+ volumes:
+  - /opt/nashdevs/db_meteorTest:/data/db
