@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo docker build -t meteortest ./../../Dockerfile
+sudo docker build -t meteortest ./../../
